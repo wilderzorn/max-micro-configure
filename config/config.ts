@@ -82,4 +82,7 @@ export default defineConfig({
   //启用运行时 publicPath，开启后会使用 window.publicPath 作为资源动态加载的起始路径
   runtimePublicPath: {},
   // headScripts: IS_PRODUCTION ? ['window.publicPath = window.resourceBaseUrl || "/web/"'] : [],
+  alias: {
+    '#': '/src/tool',
+  },
 });

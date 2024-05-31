@@ -1,6 +1,6 @@
 import styles from './index.less';
 import { Button } from 'antd';
-import { TRNotification } from '@/utils/trHooks.jsx';
+import { TRNotification } from '#/utils/trHooks.jsx';
 import Business from './business';
 
 function Transition() {

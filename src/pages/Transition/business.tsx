@@ -1,6 +1,6 @@
 import ModalHoc from '@/components/ModalHoc/index';
 import { Form, Input, Select } from 'antd';
-import { useTRState } from '@/utils/trHooks.jsx';
+import { useTRState } from '#/utils/trHooks.jsx';
 
 const business = ({ onPress }) => {
   const [form] = Form.useForm();
