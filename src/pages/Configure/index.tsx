@@ -19,7 +19,7 @@ const Configure: React.FC = () => {
           子应用条跳转
         </Button>
       </Row>
-     <TREmpty />
+      <TREmpty />
     </div>
   );
 };
