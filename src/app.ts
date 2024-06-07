@@ -1,3 +1,6 @@
+import { defineApp } from '@umijs/max';
+import request from '#/utils/defineRequest';
+
 export const qiankun = {
   // 应用加载之前
   async bootstrap(props) {
@@ -12,3 +15,7 @@ export const qiankun = {
     // console.log('app1 unmount', props);
   },
 };
+
+export default defineApp({
+  request: request,
+});
