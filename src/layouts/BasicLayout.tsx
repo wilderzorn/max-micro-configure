@@ -11,6 +11,7 @@ export default () => {
       theme={(appearance) => {
         return {
           token: {
+            borderRadius: 5,
             colorPrimary: masterProps.globalState?.themeColor ?? '#1677ff',
           },
           algorithm: appearance === 'light' ? theme.defaultAlgorithm : theme.darkAlgorithm,

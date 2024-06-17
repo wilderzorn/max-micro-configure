@@ -11,7 +11,7 @@ const IS_PRODUCTION = NODE_ENV === 'production';
 const cig: any = {};
 
 export default defineConfig({
-  base: IS_PRODUCTION ? `/web/child/${packageName}` : '/web', // 在非根目录下部署 umi 项目时，你可以使用 base 配置
+  base: IS_PRODUCTION ? `/web/child/${packageName}` : '/', // 在非根目录下部署 umi 项目时，你可以使用 base 配置
   // base: `/web/${packageName}`, // 在非根目录下部署 umi 项目时，你可以使用 base 配置
   // base: `/${packageName}/`, // 在非根目录下部署 umi 项目时，你可以使用 base 配置
   antd: {},
@@ -28,6 +28,9 @@ export default defineConfig({
   // publicPath: `/web/child/${packageName}/`, //这里打包地址都要基于主应用的中注册的entry值
   publicPath: IS_PRODUCTION ? `/web/child/${packageName}/` : '/', //这里打包地址都要基于主应用的中注册的entry值
   hash: true,
+  history: {
+    type: 'hash',
+  },
   mountElementId: `${packageName}`, // 配置 react 组件树渲染到 HTML 中的元素 id。
   // theme: {
   // 'primary-color': defaultSettings.primaryColor,
