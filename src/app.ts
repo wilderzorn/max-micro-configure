@@ -1,5 +1,5 @@
 import { defineApp } from '@umijs/max';
-import request from '#/utils/defineRequest';
+import request from '#/resource/defineRequest';
 
 export const qiankun = {
   // 应用加载之前
